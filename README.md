@@ -41,7 +41,11 @@ https://krimeas.github.io/First-Portfolio/
 #### H2 Hover element:
   1. By: https://css-tricks.com/author/afiftemani/ 
   2. From: https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/
-  
-Task details supplied by UT Austin Coding Bootcamp.
+
+#### Color Palet:
+  1. taken from https://coolors.co/ pulled against background image.
+
+ 
+Task details and reset.css supplied by UT Austin Coding Bootcamp.
 
 This code follows the MIT License!
