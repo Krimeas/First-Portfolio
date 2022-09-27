@@ -5,8 +5,9 @@
 First Portfolio: Deploy a viewable portfolio of work samples so that it can be reviewed and assessed for open position candidacy during job searches.
 
 ## Portfolio Description
-Deployed Website with viewable works including three working links and two 'dummy' links that lead to the main repository.  Details for potential employer listed including linkedin, email, phone, and Github link to reference other (future) works.
+Deployed Website with viewable works including three working links and two 'dummy' links that lead to the Krimeas main repository.  Details for potential employer listed including Linkedin, email, phone, and Github link to reference other (future) works.
 
+https://krimeas.github.io/First-Portfolio/
 
 ![Portfolio](/Assets/Chal2.JPG)
 
@@ -40,3 +41,7 @@ Deployed Website with viewable works including three working links and two 'dumm
 #### H2 Hover element:
   1. By: https://css-tricks.com/author/afiftemani/ 
   2. From: https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/
+  
+Task details supplied by UT Austin Coding Bootcamp.
+
+This code follows the MIT License!
