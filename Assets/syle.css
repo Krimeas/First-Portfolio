@@ -1,21 +1,29 @@
 :root {
- --specialBorder: solid 6px #5F0A87;
- --h: 1.6em;
-
+ --specialBorder: solid 6px #0F1112;
+ --gradient: linear-gradient(
+ #202024,#0F1112, #202024) ;
+ --myWhite: #D7DBDC;
+ --myGrey: #202024;
+ --myBlack: #0F1112;
 }
 
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-image: url(space-art-5626848_960_720.jpg);
-  background-size: 100%;
-  color: whitesmoke;
+  background-image: url(andyone--WW8jBak7bo-unsplash.jpg);
+  background-position-x: center;
+  /* 
+  background-repeat:no-repeat;
+  background-size: auto; */
 
+  color: var(--myWhite);
+  background-color: var(--myGrey);
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 a { 
   color: rgb(6, 189, 255);
-
 }
 
 /* CSS for the header section of the body Section START */
@@ -25,9 +33,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-  background-image: linear-gradient(#5F0A87
-  , #A4508B);
-
+  background-image: var(--gradient);
 }
 
 header nav {
@@ -37,14 +43,14 @@ header nav {
   font-weight: bold;  
   float: center;
   font-family: 'Courier New', Courier, monospace;
+  padding: 8px;
 }
-
 
 .navigation a:hover {
-  background: black;
-  color: white;
-
+  background: var(--myWhite);
+  color: var(--myGrey);
 }
+
 
 /* CSS for the header section of the body Section END */
 /* CSS for the header section of the body Section END */
@@ -52,26 +58,33 @@ header nav {
 
 /* CSS for the main section of the body Section START */
 main {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin: 5px;
   font-size: larger;
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 1.5em;
   border-bottom: var(--specialBorder);
   border-top: var(--specialBorder);
   padding: 10px;
-  margin: 50px;
+  margin: 150px 50px 50px 50px;
   text-align: center;
   font: bold;
-  
+}
+
+p {
+  margin: 1% 4%  1% 4%;
+  padding: 10px;
+}
+
+section {
+  scroll-margin-top: 7rem;
 }
 
 img {
@@ -80,31 +93,34 @@ img {
   width: 50%;
   height: 90%;
   max-width: 800px;
+  min-width: 180px;
+  min-height: 200px;
 }
 
-Section {
-  margin: 1% 4%  1% 4%;
+.hover-2 {
+  line-height: 1.6em;
+  color: var(--myWhite);
+  background: var(--gradient)
+    bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+  transition: 0.3s;
 }
 
-/* CSS for the About Me Section */
-p {
-  margin: 1% 4%  1% 4%;
-  padding: 2%;
+.hover-2:hover {
+  --_i: 0;
 }
 
-.aboutMe{
-  display: flex;
-  flex-flow: wrap column;
-  align-items: center;
 
+/* CSS for the About Me Section START */
+#aboutMe a:hover {
+  background: var(--myWhite);
+  color: var(--myGrey);
 }
 
-/* CSS for the Portfolio Section */
+/* CSS for the Portfolio Section START */
 .portfolio {
   display: flex;
   flex-flow: wrap row;
   align-items: center;
-  
 }
 
 .portfolio a {
@@ -119,7 +135,6 @@ p {
   flex-flow: wrap row;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .portfolio2 a {
@@ -127,7 +142,6 @@ p {
   max-width: 500px;
   height: auto;
   padding: 5px;
-  
 }
 
 
@@ -136,7 +150,6 @@ p {
   width: 100%;
   height: auto;
   padding: 5px;
-
 }
 
 
@@ -146,45 +159,32 @@ p {
   max-width:500px;
   height: auto;
   padding: 5px;
-
 }
 
 
 img:hover {
-  box-shadow: 20px 10px 20px #0e0e0e;
+  box-shadow: 20px 10px 20px var(--myBlack);
   transition: .3s;
- 
 }
 
-/* CSS for the contact Me Section */
-.hover-2 {
-  line-height: var(--h);
-  color: #0000;
-  text-shadow: 
-    0 var(--_i, var(--h)) #fff,
-    0 0 rgb(0 0 0 / calc(var(--_i, 1) * 100%) );
-  background: 
-    linear-gradient(#5F0A87
-    , #A4508B)
-    bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.hover-2:hover {
-  --_i: 0;
+/* CSS for the contact Me Section START */
+
+#contactMe ul a:hover {
+  background: var(--myWhite);
+  color: var(--myGrey);
 }
 
 /* CSS for the main section of the body Section END */
 /* CSS for the main section of the body Section END */
 
-/* Footer Element CSS */
+/* Footer Element CSS START */
 footer {
   text-align: center;
   font-size: 20px;
   margin: 25px;
   padding: 25px;
-
 }
+
 
 ul {
   display: flex;
@@ -196,18 +196,33 @@ ul {
 /* CSS for the footer section of the body Section END */
 
 
-/* Media alterations */
+/* Media alterations START */
+@media screen and (min-width: 2400px) {
+  body {
+    background-size: 100%;
+  }
+  }
+
+
 @media screen and (max-width: 992px) {
   .portfolio2 {
     display:flex;
     flex-flow: wrap column;
   }
-  
+  }
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 175px;
+  }
+  h2 {
+    margin-top: 175px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   main {
-    margin-top: 175px;
+    margin-top: 250px;
   }
   
   header nav {
@@ -218,21 +233,31 @@ ul {
 
   .navigation a {
     padding: 5px;
-
   }
 
   img {
     display:flex;
     flex-flow: wrap column;
   }
+  
+  #contactMe ul {
+    display: flex;
+    flex-flow: wrap column;
+    align-content: center;
+  }
+
+  h2 {
+    margin-top: 250px;
+  }
 }
 
 @media screen and (max-width: 445px) {
   main {
-    margin-top: 200px;
-    
+    margin-top: 300px;
   }
+
   h2 {
+    margin-top: 250px;
     font-size: 1.0em;
   }
 }
