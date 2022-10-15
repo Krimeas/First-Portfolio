@@ -9,7 +9,7 @@ Deployed Website with viewable works including three working links and two 'dumm
 
 https://krimeas.github.io/First-Portfolio/
 
-![Portfolio](/assets/chal2.JPG)
+![Portfolio](\assets\chal2.JPG)
 
 
 ------------------------------------------------------------
